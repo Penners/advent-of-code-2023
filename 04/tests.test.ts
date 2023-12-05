@@ -199,16 +199,16 @@ describe("p2", () => {
     });
   });
 
-  //   describe("real input", () => {
-  //     it("should return a number", () => {
-  //       const raw = fs
-  //         .readFileSync(path.join(__dirname, "input.data.txt"))
-  //         .toString();
+  describe("real input", () => {
+    it("should return 5659035", () => {
+      const raw = fs
+        .readFileSync(path.join(__dirname, "input.data.txt"))
+        .toString();
 
-  //       const data = parseInput(raw);
-  //       const result = calculateReaminingCards(data);
-  //       console.log("p1 awnser is", result);
-  //       expect(result).toBe(4193138);
-  //     });
-  //   });
+      const data = parseInput(raw);
+      const result = calculateReaminingCards(data);
+      console.log("p2 awnser is", result);
+      expect(result).toBe(5659035);
+    });
+  });
 });
