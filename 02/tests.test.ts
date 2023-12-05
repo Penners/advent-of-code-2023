@@ -60,7 +60,7 @@ describe("p1", () => {
         return current;
       }, 0);
 
-      console.log(`P1 awnser is :${sumOfValidGames}`);
+      console.log(`P1 answer is :${sumOfValidGames}`);
       expect(sumOfValidGames).toEqual(2265);
     });
   });

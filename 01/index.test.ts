@@ -52,7 +52,7 @@ describe("Part 1 Example in question", () => {
 });
 
 describe("Part 1 Full sample", () => {
-  it("Should attempt to calcuate the awnser", () => {
+  it("Should attempt to calcuate the answer", () => {
     const input = fs
       .readFileSync(path.join(__dirname, "data.sample.txt"))
       .toString();
@@ -64,7 +64,7 @@ describe("Part 1 Full sample", () => {
 });
 
 describe("Part 2 Full sample", () => {
-  it("Should attempt to calcuate the awnser", () => {
+  it("Should attempt to calcuate the answer", () => {
     const input = fs
       .readFileSync(path.join(__dirname, "data.sample.txt"))
       .toString();

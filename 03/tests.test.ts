@@ -230,7 +230,7 @@ describe("p1", () => {
     });
   });
 
-  describe("part 1 awnser", () => {
+  describe("part 1 answer", () => {
     it("returns a number", () => {
       const raw = fs
         .readFileSync(path.join(__dirname, "input.data.txt"))
@@ -273,7 +273,7 @@ describe("p2", () => {
       const grid = parser(raw);
 
       const result = sumGearRatios(grid);
-      console.log("P2 awnser is", result);
+      console.log("P2 answer is", result);
       expect(result).toEqual(82301120);
     });
   });

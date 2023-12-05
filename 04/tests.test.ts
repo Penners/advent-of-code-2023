@@ -177,7 +177,7 @@ describe("p1", () => {
 
       const data = parseInput(raw);
       const result = calculateTotalWinnings(data);
-      console.log("p1 awnser is", result);
+      console.log("p1 answer is", result);
       expect(result).toBe(24160);
     });
   });
@@ -207,7 +207,7 @@ describe("p2", () => {
 
       const data = parseInput(raw);
       const result = calculateReaminingCards(data);
-      console.log("p2 awnser is", result);
+      console.log("p2 answer is", result);
       expect(result).toBe(5659035);
     });
   });
