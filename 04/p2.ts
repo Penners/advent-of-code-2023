@@ -29,7 +29,6 @@ export const calculateReaminingCards = async (input: parsedInput) => {
     const winners = winCache.get(cardId);
     if (winners) {
       totalCards = totalCards + winners.length;
-      console.log("wtf", totalCards);
       winners.forEach((id) => stream.push(id));
     }
   }
