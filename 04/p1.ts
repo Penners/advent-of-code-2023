@@ -1,6 +1,7 @@
 export const parseInput = (raw: string) => {
   return raw.split("\n").map((row) => {
-    const [_, data] = row.split(":");
+    const [_, data] = row.trim().split(":");
+    const [__, ID] = _.trim().split("Card");
     const [nums, winnings] = data.split("|").map((row) =>
       row
         .trim()
@@ -8,11 +9,11 @@ export const parseInput = (raw: string) => {
         .filter((candiate) => candiate.trim())
         .map((num) => parseInt(num))
     );
-    return [nums, new Set(winnings)] as const;
+    return [nums, new Set(winnings), ID.trim()] as const;
   });
 };
 
-type parsedInput = ReturnType<typeof parseInput>;
+export type parsedInput = ReturnType<typeof parseInput>;
 
 export const calculateWinnings = ([input, winners]: parsedInput[number]) => {
   const winningsNumsCount = input.reduce((prev, current) => {
